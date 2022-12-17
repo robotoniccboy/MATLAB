@@ -1,0 +1,9 @@
+clc
+clear 
+close all;
+n=input('enter the sequence order:');
+t=-n:1:n;
+a=[zeros(1,n),1,zeros(1,n)];
+subplot(3,2,1);
+plot(t,a);
+xlabel('time.........'
