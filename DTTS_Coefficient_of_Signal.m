@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+n=0:23;
+x=ones(1,24)+sin([0:23]*pi/12 + 3*pi/8);
+x1= fft(x)/24;
+subplot(2,1,1);
+plot(n,x);
+subplot(2,1,2);
+stem(n,x);
