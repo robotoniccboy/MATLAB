@@ -1,0 +1,17 @@
+clear all;
+clc;
+x1=input("Enter the first value:");
+y1=input("Enter the second value:");
+l=length(x1);
+t=0:1:l-1;
+subplot(3,1,1);
+stem(t,x1);
+l2=length(y1);
+t1=0:1:l2-1;
+subplot(3,1,2);
+stem(t1,y1);
+x3=conv(x1,y1);
+l3=length(x3);
+t2=0:1:l3-1;
+subplot(3,1,3);
+stem(t2,x3);
